@@ -1,0 +1,70 @@
+<!doctype html>
+<!--<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>-->
+
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FCC Survey form</title>
+<meta name="description" content="FCC survey form.">
+<meta name="author" content="chrisjorgy">
+  </head>
+  
+  <h1 id="title">Welcome to Fur Pals!</h1>
+  <h3 id="sub-title">Please tell us about your pupper so we can connect you with friends</h3>
+  <body>
+    <p id="description">Please sign-up to receive play-date alerts:</p>
+    <form id="survey-form">
+      <label for="name-label" id="name-label">Please enter your name:</label> 
+      <input type="text" id="name"   placeholder="ex. Darla" required>
+      <p></p>
+      <label for="email-label" id="email-label">Pleas enter your email</label>
+      <input type="email" id="email"  required               placeholder="ex. PupperDar@gmail.com ">
+      <p></p>
+      <label for="number-label" id="number-label">Please enter your puppers age</label>
+      <input type="number" id="number"  placeholder="number" min="1" max="25" requried>
+      <div class="radios">
+        <p>Please let us know the size of your pupper</p>
+        <span>
+          
+      <input id="Extra small" type="radio" name="animal size" value="1">
+<label for="Extra small">Extra small</label><br>
+      <input id="Small" type="radio" name="animal size" value="2">
+<label for="Small">Small</label><br>
+      <input id="Medium" type="radio" name="animal size" value="3">
+<label for="Medium">Medium</label><br>
+      <input id="Large" type="radio" name="animal size" value="4">
+<label for="Large">Large</label><br>
+      <input id="Extra large" type="radio" name="animal size" value="5">
+<label for="Extra large">Extra large</label><br>
+        </span>
+              </div>
+      <div class="checkboxes">
+        <p>Please tell us your favorite activities</p>
+          <span>
+            <p></p>
+            <label for="walking"><input id="walking" type="checkbox" name="activity" value="1">Walking</label><br>
+                <label for="fetch"><input id="fetch" type="checkbox" name="activity" value="2">Fetch</label><br>
+                <label for="sleeping"><input id="sleeping" type="checkbox" name="activity" value="3">Sleeping</label><br>
+                <label for="eating"><input id="eating" type="checkbox" name="activity" value="4">Eating</label><br>
+            
+          </span>
+      </div>
+      <p></p>
+      <label for="myselect">Would you like to receive play date alerts</label>
+      <select id="dropdown" required>
+            <option>Yes</option>
+            <option>No</option>
+            <option>Maybe</option>
+      </select>
+        <p>Please let us know if there are any further questions.</p>
+      <textarea name="message" rows="10" cols= "50">Please send us an email</textarea>
+      <br></br>
+      <input id="submit" type="submit"</input>
+        
+        
+        
+    </form>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
